@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About
+A simple interface to lookup information about an Ethereum address. A user can add any valid Mainnet ETH address and get the current balance for the address and a list of recent transactions.
 
-## Getting Started
+## Setup
 
-First, run the development server:
+### Etherscan API
+
+You will need to add a .env file to the root of this project with your Etherscan API key [Get your free key here](https://etherscan.io/login). There is a `.env.example` file which you can rename to `.env`
+
+### Instal modules
+```pnpm i``` 
+or use npm, yarn, etc.
+
+### Run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# Potential Improvements
+This project has lots of room for improvement. Here are some ideas:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Connect a browser extension wallet to obtain a wallet address instead of typing in the input
+- Switch Ethereum networks (Mainnet, Sepolia, Goerli)
+- Add more Blockchains and Explorer integrations
+- Display conversion value from Eth to Fiat (USD, EUR, etc)
+- Link to blockexplorer for each transaction
+- Pagination of transactions (only showing 1 page currently)
+- Filters: Addresses, Validated Contracts, etc
+- Sorting of transactions based on retrieved values
+- Improved responsive html
