@@ -1,6 +1,9 @@
 # About
 A simple interface to lookup information about an Ethereum address. A user can add any valid Mainnet ETH address and get the current balance for the address and a list of recent transactions.
 
+![image](https://github.com/caudurodev/eth_address_info/assets/60057887/e7b8dbe4-2b99-4725-925e-fa4217fd90db)
+
+
 ## Setup
 
 ### Etherscan API
