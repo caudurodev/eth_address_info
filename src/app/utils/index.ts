@@ -1,3 +1,5 @@
+import { format } from 'date-fns';
+
 export const weiToEth = (wei: string, decimals = 18) => {
     const weiBigInt = BigInt(wei);
     const ethScale = BigInt('1' + '0'.repeat(18));
@@ -18,3 +20,8 @@ export const weiToEth = (wei: string, decimals = 18) => {
 
     return `${integerPart}.${fractionalPart} ETH`;
 };
+
+export const convertTimestampToDate = (timestamp: string) => {
+    const date = new Date(Number(timestamp) * 1000);
+    return format(date, 'dd/MM/yyyy');
+}

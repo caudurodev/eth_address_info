@@ -27,7 +27,6 @@ export const AddressInputCard = ({ onGetData }: AddressInputCardProps) => {
                         type="text"
                         label="Wallet Address"
                         placeholder="0x..."
-                        defaultValue="0x70085C396A42197Bf77dDa28487682837DE1aDA0"
                         description="Address of the wallet to get data for"
                         variant="bordered"
                         {...register("walletAddress", {

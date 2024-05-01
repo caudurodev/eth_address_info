@@ -26,6 +26,7 @@ export const getRecentAddressTransactions = async (address: string) => {
     request.searchParams.append('sort', 'desc');
     request.searchParams.append('apikey', process.env.NEXT_PUBLIC_ETHERSCAN_API_KEY!);
     request.searchParams.append('page', '1');
+    request.searchParams.append('offset', '10');
     try {
         const response = await fetch(request.toString());
         const parsedResponse = await response.json();
